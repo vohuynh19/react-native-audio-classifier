@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		849DA405CF5458BC13F38251124BA0CD /* TensorFlowLiteTaskAudio */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0FFCDB53D7BE6064ABB0CA5138A61EC5 /* Build configuration list for PBXAggregateTarget "TensorFlowLiteTaskAudio" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = TensorFlowLiteTaskAudio;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		5DCE435323A62B9BA4DB81A51E498062 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C4389E9A8F816BE8ADD9923070C2C4F4 /* Pods-AudioClassification-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C462E6FF4D25E33B25E0E8C8FFE0190 /* Pods-AudioClassification-dummy.m */; };
+		C6966462454F66A88900C553F4658366 /* Pods-AudioClassification-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EED6F1B55DEFB7DFF6D7A55AC8007BC1 /* Pods-AudioClassification-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED838AD38D28431F54E48FC7F068D781 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 849DA405CF5458BC13F38251124BA0CD;
+			remoteInfo = TensorFlowLiteTaskAudio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		147CB1D0F07F708FC045B47F0EED012B /* Pods-AudioClassification-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AudioClassification-acknowledgements.markdown"; sourceTree = "<group>"; };
+		288683494396BD1BA169210253324444 /* Pods-AudioClassification.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AudioClassification.release.xcconfig"; sourceTree = "<group>"; };
+		4A51E08D136F3BBFB537F332329CA3E1 /* Pods-AudioClassification-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AudioClassification-Info.plist"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7C462E6FF4D25E33B25E0E8C8FFE0190 /* Pods-AudioClassification-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AudioClassification-dummy.m"; sourceTree = "<group>"; };
+		8D62ABC517EB6C20AE8441C4B4E565D8 /* TensorFlowLiteTaskAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TensorFlowLiteTaskAudio.framework; path = Frameworks/TensorFlowLiteTaskAudio.framework; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A614395714861FEB615C27DC76281A82 /* Pods-AudioClassification.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AudioClassification.modulemap"; sourceTree = "<group>"; };
+		C063DA6110B0BF9B1636E3B5EDF05103 /* TensorFlowLiteTaskAudio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TensorFlowLiteTaskAudio.release.xcconfig; sourceTree = "<group>"; };
+		CDCDCC754E2ED52F199513AC9BF73780 /* Pods-AudioClassification.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AudioClassification.debug.xcconfig"; sourceTree = "<group>"; };
+		DE35142E29D0A072E57C89D7C79069DA /* TensorFlowLiteTaskAudio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TensorFlowLiteTaskAudio.debug.xcconfig; sourceTree = "<group>"; };
+		E22FEA8903CAFA3239836EC0E525C29E /* Pods-AudioClassification-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AudioClassification-acknowledgements.plist"; sourceTree = "<group>"; };
+		EC21D38C2E0E8C4298EE266E561BA08A /* Pods-AudioClassification */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-AudioClassification"; path = Pods_AudioClassification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED6F1B55DEFB7DFF6D7A55AC8007BC1 /* Pods-AudioClassification-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AudioClassification-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E5CE0C4C123673F7FB91AAB13FB00979 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DCE435323A62B9BA4DB81A51E498062 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EA5C17FA3D716ECB879C593830D197C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE35142E29D0A072E57C89D7C79069DA /* TensorFlowLiteTaskAudio.debug.xcconfig */,
+				C063DA6110B0BF9B1636E3B5EDF05103 /* TensorFlowLiteTaskAudio.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TensorFlowLiteTaskAudio";
+			sourceTree = "<group>";
+		};
+		4BF6A2D52FFA994103FF01289E250CCB /* TensorFlowLiteTaskAudio */ = {
+			isa = PBXGroup;
+			children = (
+				6AEBD005871834A774BA248C252C03E9 /* Frameworks */,
+				1EA5C17FA3D716ECB879C593830D197C /* Support Files */,
+			);
+			name = TensorFlowLiteTaskAudio;
+			path = TensorFlowLiteTaskAudio;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6AEBD005871834A774BA248C252C03E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D62ABC517EB6C20AE8441C4B4E565D8 /* TensorFlowLiteTaskAudio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E1BE4512D7DEF19070196D3D9B14E2C /* Pods-AudioClassification */ = {
+			isa = PBXGroup;
+			children = (
+				A614395714861FEB615C27DC76281A82 /* Pods-AudioClassification.modulemap */,
+				147CB1D0F07F708FC045B47F0EED012B /* Pods-AudioClassification-acknowledgements.markdown */,
+				E22FEA8903CAFA3239836EC0E525C29E /* Pods-AudioClassification-acknowledgements.plist */,
+				7C462E6FF4D25E33B25E0E8C8FFE0190 /* Pods-AudioClassification-dummy.m */,
+				4A51E08D136F3BBFB537F332329CA3E1 /* Pods-AudioClassification-Info.plist */,
+				EED6F1B55DEFB7DFF6D7A55AC8007BC1 /* Pods-AudioClassification-umbrella.h */,
+				CDCDCC754E2ED52F199513AC9BF73780 /* Pods-AudioClassification.debug.xcconfig */,
+				288683494396BD1BA169210253324444 /* Pods-AudioClassification.release.xcconfig */,
+			);
+			name = "Pods-AudioClassification";
+			path = "Target Support Files/Pods-AudioClassification";
+			sourceTree = "<group>";
+		};
+		9D6B9DE70CE846098864CA8191C0274D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC21D38C2E0E8C4298EE266E561BA08A /* Pods-AudioClassification */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3FD5993A13C236C2B8FF8E4F0B6A185 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4BF6A2D52FFA994103FF01289E250CCB /* TensorFlowLiteTaskAudio */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C7FDA35A5D7E4FA12DB60A5B88204068 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E1BE4512D7DEF19070196D3D9B14E2C /* Pods-AudioClassification */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				B3FD5993A13C236C2B8FF8E4F0B6A185 /* Pods */,
+				9D6B9DE70CE846098864CA8191C0274D /* Products */,
+				C7FDA35A5D7E4FA12DB60A5B88204068 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		53F6464A8239958491861822B4D0E77C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6966462454F66A88900C553F4658366 /* Pods-AudioClassification-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		411B6C11C80F81969CB275533D6A0E26 /* Pods-AudioClassification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AF64E6FADB6481A91C6A098380D2424 /* Build configuration list for PBXNativeTarget "Pods-AudioClassification" */;
+			buildPhases = (
+				53F6464A8239958491861822B4D0E77C /* Headers */,
+				3D16989482A745FCD2A60F60970CF2F1 /* Sources */,
+				E5CE0C4C123673F7FB91AAB13FB00979 /* Frameworks */,
+				384F44654810306A260CD158181C76E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBB0AE6D12F4136CDBF579EFF15333BC /* PBXTargetDependency */,
+			);
+			name = "Pods-AudioClassification";
+			productName = Pods_AudioClassification;
+			productReference = EC21D38C2E0E8C4298EE266E561BA08A /* Pods-AudioClassification */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 9D6B9DE70CE846098864CA8191C0274D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				411B6C11C80F81969CB275533D6A0E26 /* Pods-AudioClassification */,
+				849DA405CF5458BC13F38251124BA0CD /* TensorFlowLiteTaskAudio */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		384F44654810306A260CD158181C76E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D16989482A745FCD2A60F60970CF2F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4389E9A8F816BE8ADD9923070C2C4F4 /* Pods-AudioClassification-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBB0AE6D12F4136CDBF579EFF15333BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TensorFlowLiteTaskAudio;
+			target = 849DA405CF5458BC13F38251124BA0CD /* TensorFlowLiteTaskAudio */;
+			targetProxy = ED838AD38D28431F54E48FC7F068D781 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09909ECBA13E8F70A928465E7F7A9A92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2DE0D8898245310716431F92FA4989FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		411428BAC5F68B8AC8DBF4D19254F077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C063DA6110B0BF9B1636E3B5EDF05103 /* TensorFlowLiteTaskAudio.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		741B2698A7F21C3C72F97589956D7C9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDCDCC754E2ED52F199513AC9BF73780 /* Pods-AudioClassification.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AudioClassification/Pods-AudioClassification-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AudioClassification/Pods-AudioClassification.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A056DCD63D4A80F7A9366426F993206A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE35142E29D0A072E57C89D7C79069DA /* TensorFlowLiteTaskAudio.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC33F2B3929C2C3EDF5B5F907E2F35A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 288683494396BD1BA169210253324444 /* Pods-AudioClassification.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AudioClassification/Pods-AudioClassification-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AudioClassification/Pods-AudioClassification.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FFCDB53D7BE6064ABB0CA5138A61EC5 /* Build configuration list for PBXAggregateTarget "TensorFlowLiteTaskAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A056DCD63D4A80F7A9366426F993206A /* Debug */,
+				411428BAC5F68B8AC8DBF4D19254F077 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09909ECBA13E8F70A928465E7F7A9A92 /* Debug */,
+				2DE0D8898245310716431F92FA4989FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AF64E6FADB6481A91C6A098380D2424 /* Build configuration list for PBXNativeTarget "Pods-AudioClassification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				741B2698A7F21C3C72F97589956D7C9D /* Debug */,
+				CC33F2B3929C2C3EDF5B5F907E2F35A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
