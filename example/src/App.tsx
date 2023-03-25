@@ -1,18 +1,30 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-audio-classifier';
+import { StyleSheet, View, Button } from 'react-native';
+import {
+  init,
+  startAudioClassification,
+  stopAudioClassification,
+} from 'react-native-audio-classifier';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
-
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Button title="Init" onPress={init} />
+
+      <View style={styles.box} />
+
+      <Button
+        title="StartAudioClassification"
+        onPress={startAudioClassification}
+      />
+
+      <View style={styles.box} />
+
+      <Button
+        title="StopAudioClassification"
+        onPress={stopAudioClassification}
+      />
     </View>
   );
 }

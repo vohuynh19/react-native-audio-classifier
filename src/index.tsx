@@ -17,6 +17,14 @@ const AudioClassifier = NativeModules.AudioClassifier
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return AudioClassifier.multiply(a, b);
+export function init() {
+  AudioClassifier.init();
+}
+
+export function startAudioClassification() {
+  AudioClassifier.startAudioClassification();
+}
+
+export function stopAudioClassification() {
+  AudioClassifier.stopAudioClassification();
 }
