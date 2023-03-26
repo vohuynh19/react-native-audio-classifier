@@ -1,4 +1,19 @@
-import { NativeModules, Platform } from 'react-native';
+import {
+  NativeModules,
+  Platform,
+  NativeEventEmitter,
+  EmitterSubscription,
+} from 'react-native';
+
+type Label = 'background' | 'left' | 'right';
+type EventType = 'onResult' | 'onError';
+
+type ResultType = { label: Label; score: number };
+
+type AudioClassificationResult = {
+  categories: ResultType[];
+  inferenceTime: number;
+};
 
 const LINKING_ERROR =
   `The package 'react-native-audio-classifier' doesn't seem to be linked. Make sure: \n\n` +
@@ -16,6 +31,24 @@ const AudioClassifier = NativeModules.AudioClassifier
         },
       }
     );
+
+const eventQueue: EmitterSubscription[] = [];
+
+export const addEventListener = (
+  eventName: EventType,
+  callback: (payload: AudioClassificationResult) => void
+) => {
+  const eventEmitter = new NativeEventEmitter();
+  const eventListenerObj = eventEmitter.addListener(eventName, callback);
+  eventQueue.push(eventListenerObj);
+  return eventListenerObj;
+};
+
+export const clearAllEventLisseners = () => {
+  eventQueue.forEach((eventEmitter) => {
+    eventEmitter.remove();
+  });
+};
 
 export function init() {
   AudioClassifier.init();

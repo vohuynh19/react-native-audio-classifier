@@ -3,6 +3,7 @@ package com.audioclassifier
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.bridge.ReactContextBaseJavaModule
 import com.facebook.react.bridge.ReactMethod
+import com.facebook.react.bridge.ReactContext
 import com.facebook.react.bridge.Promise
 import com.facebook.react.bridge.WritableMap
 import com.facebook.react.bridge.Arguments
@@ -58,19 +59,33 @@ class AudioClassifierModule(reactContext: ReactApplicationContext) : ReactContex
     classifyAudio()
   }
 
-  // private fun sendEvent(reactContext: ReactContext, eventName: String, params: WritableMap?) {
-  //   reactContext
-  //     .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter::class.java)
-  //     .emit(eventName, params)
-  // }
+  private fun sendEvent(reactContext: ReactContext, eventName: String, params: WritableMap?) {
+    reactContext
+      .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter::class.java)
+      .emit(eventName, params)
+  }
 
   private val listener = object : AudioClassificationListener {
     override fun onResult(results: List<Category>, inferenceTime: Long) {
-      // sendEvent(reactContext, "onResult", results);
+      val params = Arguments.createMap()
+      val categoriesArray = Arguments.createArray()
+
+      for (category in results) {
+        val categoryParams = Arguments.createMap()
+        categoryParams.putString("label", category.getLabel())
+        categoryParams.putDouble("score", category.getScore().toDouble())
+        categoriesArray.pushMap(categoryParams)
+      }
+
+      params.putArray("categories", categoriesArray)
+      params.putDouble("inferenceTime", inferenceTime.toDouble())
+      sendEvent(reactContext, "onResult", params)
     }
 
     override fun onError(error: String) {
-      // sendEvent(reactContext, "onError", error);
+      val params = Arguments.createMap()
+      params.putString("error", error)
+      sendEvent(reactContext, "onError", params)
     }
   }
 
@@ -102,7 +117,6 @@ class AudioClassifierModule(reactContext: ReactApplicationContext) : ReactContex
         classifier = AudioClassifier.createFromFileAndOptions(reactApplicationContext, currentModel, options)
         tensorAudio = classifier.createInputTensorAudio()
         recorder = classifier.createAudioRecord()
-        startAudioClassification()
     } catch (e: IllegalStateException) {
         listener.onError(
             "Audio Classifier failed to initialize. See error logs for details"
@@ -130,12 +144,13 @@ class AudioClassifierModule(reactContext: ReactApplicationContext) : ReactContex
   }
 
   private fun classifyAudio() {
+    Log.d("classifyAudio", "test")
+
     tensorAudio.load(recorder)
     var inferenceTime = SystemClock.uptimeMillis()
     val output = classifier.classify(tensorAudio)
+
     inferenceTime = SystemClock.uptimeMillis() - inferenceTime
     listener.onResult(output[0].categories, inferenceTime)
   }
-
-
 }
